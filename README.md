@@ -30,10 +30,10 @@ return a polynomial equation and its differentiate equations. The Function "JMT"
   * first, instantiate my car and other vehicles from the data received from the simulator.
   * second,use the information of my car and other vehicles to choose the best trajectory of next state from current state.
   * third, use the best trajectory to generate the execution data for the simulator,and send them to the simulator.  
-Several Other problems I met:  
+* Several Other problems I met:  
 1)About the latency between the simulator running and the path planner returning a path, this time is mainly determined by the path planner's running time.After some trial,I used 15 points for my solution.  
 2)About the finite state mechine, at first I use "KL,LCR,LCL,PLCR,PLCL" From the course,but at last I found the only use "KL,LCR,LCL" three state ,it's enough,and I can't understand what action we need do in "PLCR" and "PLCL".
-3)About Frenet coordinate, Using spline to fit the waypoints is a good idea.
+3)About Frenet coordinate, Using spline to fit the waypoints is a good idea.  
 4)About other vehicle's action,when a car in the adjacent lane change lane to my car's current lane,the distance between this two vehicle is very close. The action time is very short, a collision may happen and it is difficult to avoid.  
 
 
